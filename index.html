@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Henri</title>
+    <title>Henri's Website</title>
     <!-- CSS -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
@@ -12,41 +12,43 @@
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;700&family=Poppins:wght@100;200;600&display=swap" rel="stylesheet">
 
+<script src="https://kit.fontawesome.com/bff7ea3e36.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
 <!-- start header -->
-    <header>
+    <header class="container">
        <div>
-           <img src="https://www.ironhack.com/assets/icons/ironhack_logos/logo.svg" alt="" class="logo-header">
+           <img src="img/logo_small_icon_only_inverted.png" alt="" class="logo-header">
        </div> 
         <div>
             <nav>
                 <a href="#about">About</a>
                 <a href="#contact">Contact</a>
-                <a href="https://www.betaroom.vision">Buy Now</a> 
+                <a href="https://www.betaroom.vision">Learn More</a> 
             </nav>
         </div>
         <div>
-            <a href="#">Login</a>
-            <a href="#">Icon</a>
+            <a href="#"><i class="far fa-user-circle fa-3x"></i></a>
+            <a href=""><i class="fas fa-search fa-3x"></i></a>
         </div>
     </header>
 <!-- end header -->
 
 <!-- start hero -->
-<section id="hero">
-<h1>This is a Title</h1>
-<h2>Subtitle</h2>
-<button>this is a button</button>
+<section id="hero" class="container">
+<h1>Good Times</h1>
+<h2>Summer '20</h2>
+<button>See Gallery</button>
 </section>
 <!-- hero end -->
 
 <!-- start cards -->
-    <section>
+    <section id="card" class="container">
     <!-- start card 1 -->
     <div class="card">
     <img src="img/imm005_2A.jpg" alt="group picture">
-    <h3>Card Title</h3>
+    <h3>The Fam</h3>
     <p> description <em>blablabla</em></p>
     avatar
     author
@@ -57,8 +59,8 @@
 
     <!-- start card 2 -->
     <div class="card">
-    <img src="img/imm006_3A.jpg" alt="">
-    <h3>Card Title</h3>
+    <img src="img/imm006_3A.jpg" alt="flowers picture">
+    <h3>The Flowers</h3>
     <p> description </p>
     avatar
     author
@@ -68,8 +70,8 @@
 
     <!-- start card 3 -->
     <div class="card">
-    <img src="img/imm004_1A.jpg" alt="">
-    <h3>Card Title</h3>
+    <img src="img/imm004_1A.jpg" alt="david picture">
+    <h3>The Catch</h3>
     <p> description  </p>
     avatar
     author
@@ -89,14 +91,47 @@
 
 <!-- start contact -->
 <section id="contact">
-    Contact
+    <h3>Let's Connect</h3>
+    <label for="name">Name:</label>  
+    <input type="text" id="name">
+    <br><br>
+    <label for="email">Email:</label>  
+    <input type="email" id="email">
+    <br><br>
+    <label for="date">Starting Date:</label>
+    <input type="date" id="date">
+    <br><br>
+    <label for="document">Add your ID:</label>
+    <input type="file" id="document">
+    <br><br>
+    <label for="password">Create a Password:</label>
+    <input type="password" id="password">
+    <br><br>
+    <label for="color">Choose a Color:</label>
+    <input type="color" id="color">
+    <br><br>
+    <label for="mobile">Your Phone:</label>
+    <input type="tel" id="mobile">
+    <br><br>
+    <label for="terms">I accept terms & conditions:</label>
+    <input type="checkbox" id="terms">
+    <br><br>
+    <input type="submit" value="send this info">
 </section>
 <!-- end contact -->
 
+<br><br>
 
 <!-- start footer -->
 <footer>
-    This is the footer
+    <h4> Thanks for visiting us!</h4>
+    <i class="fas fa-heart fa-3x"></i>
+    <i class="fab fa-instagram fa-3x"></i>
+    <i class="fab fa-medium fa-3x"></i>
+    <div>
+        <br>
+<a href="#">Imprint</a>
+    </div>
 </footer>
 <!-- end footer -->
 

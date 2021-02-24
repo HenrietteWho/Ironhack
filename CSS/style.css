@@ -4,12 +4,13 @@
 } 
 
 body { 
-    margin: 0;
+    margin: 0px;
 } 
 
 
 h1, h2, h3, h4, h5, h6 { 
     font-family: 'Poppins', sans-serif;
+    margin-block: 0.2rem;
 }
 
 
@@ -17,6 +18,7 @@ h1 {
     color:whitesmoke;
     padding-top: 50px;
     font-size: 5.653rem;
+    margin-top: 5px;
 }
 
 h2 { 
@@ -28,11 +30,11 @@ h3  {
     color: darkorange;
     font-size: 2.618rem;
 }
-/*
+
 h4  { 
-    color: greenyellow;
-    font-size: 1602rem;
-}*/
+    color: black;
+    font-size: 1.602rem;
+}
 
 /*
 h5  { 
@@ -40,10 +42,16 @@ h5  {
     font-size: 0.702rem;
 }*/
 
+p{ 
+    line-height: 1.6rem;
+    margin-block: 0.6rem;
+}
 
 header { 
-    background-color: darkslategray;
-    color: white;
+    background-color:white;
+    justify-content: space-between;
+    padding: 10px 25px 10px 25px;
+    align-items: center;
 } 
 
 div { 
@@ -56,24 +64,31 @@ button {
    color: white;
    border-radius: 50px;
    font-size: 1.44rem;
+   width: 150px;
+   font-weight: 300;
 }
-
+/*
 .btn-large { 
     width: 300px;
    height: 80px;
     font-size: 21px;
-} 
+} */
 
 .card { 
-    background-color:paleturquoise;
+    background-color:cornsilk;
     padding: 20px;
-    border: 2px solid teal;
-    width: 250px;
+    border: 2px solid orange;
+    width: 300px;
     margin-top: 50px;
     margin-right: 30px;
     margin-left: 30px;
     margin-bottom: 10px;
 } 
+
+#card { 
+    justify-content:center;
+} 
+
 
 img { 
    width: 100%;
@@ -90,6 +105,8 @@ img {
     background-image: url('../img/imm008_6A.jpg');
     background-size: cover;
     background-position: center;
+    flex-direction: column;
+    align-items: center;
  } 
 
  #about { 
@@ -97,9 +114,23 @@ img {
  } 
 
  #contact { 
-    height: 50vh;
+    height: 500px;
+    background-color:cornsilk;
+    border-top: 5px solid orange;
+    border-bottom: 5px solid orange;
+    padding: 20px 70px;
  } 
 
  footer { 
     height: 50vh;
+    text-align: center;
  } 
+
+ .container {
+    display: flex; /* or inline-flex */
+  }
+
+
+  link { 
+color: black;
+} 
