@@ -4,7 +4,8 @@
 } 
 
 body { 
-    margin: 0px;
+    margin: 0 auto;
+   /* max-width: 1200px; */
 } 
 
 
@@ -17,13 +18,14 @@ h1, h2, h3, h4, h5, h6 {
 h1 { 
     color:whitesmoke;
     padding-top: 50px;
-    font-size: 5.653rem;
+    /*font-size: 5.653rem;*/
+    font-size: 2rem;
     margin-top: 5px;
 }
 
 h2 { 
     color: yellow;
-    font-size: 3.998rem;
+    font-size: 1rem;
 }
 
 h3  { 
@@ -64,13 +66,19 @@ div {
 } 
 
 button { 
-   background-color:rebeccapurple;
+   background-color:black;
    color: white;
    border-radius: 50px;
    font-size: 1.44rem;
    width: 150px;
    font-weight: 300;
+   border-style:solid;
 }
+
+.button-hover{ 
+    background-color:orangered;
+
+ }
 /*
 .btn-large { 
     width: 300px;
@@ -79,9 +87,9 @@ button {
 } */
 
 .card { 
-    background-color:black;
+    background-color:whitesmoke;
     padding: 20px;
-    border: 2px solid orange;
+    border: 3px solid orange;
     width: 300px;
     margin-top: 50px;
     margin-right: 30px;
@@ -96,6 +104,10 @@ button {
 
 img { 
    width: 100%;
+  
+  /* filter: grayscale(50%);
+   filter: contrast(100%);
+   filter: saturate(200%); */
 } 
 
 .logo-header  { 
@@ -134,4 +146,67 @@ img {
     display: flex; /* or inline-flex */
   }
 
+
+a:link, a:visited {
+background-color: orangered;
+text-decoration: none;  
+padding: 10px;}
+
+a:hover {
+    color: yellow;
+   }
+
+a:active {
+    color: orange;
+   }
+
+a.menu:link, a.menu:visited {
+    background: none;
+    color:black;
+   }
+
+a.menu:hover {
+    color: orangered;
+   }
+
+   /*
+section div  h3 {
+    border:2px  white;
+   } */
+
+/* links icons */
+
+a.icon:link, a.icon:visited  {
+background-color:white;
+   }
+
+a.icon:hover {
+    color: orange;
+   }
+
+   /*--------------------*/
+   /*--------------------*/
+   /* TABLET*/
+
+   @media only screen and (min-width: 600px) and (max-width:760px) {
+    h1{
+        font-size: 3rem;
+    }
+    h2{
+        font-size: 2rem;
+    }
+   }
+
+    /*--------------------*/
+   /*--------------------*/
+   /* DESKTOP*/
+
+   @media only screen and (min-width: 760px){
+    h1{
+        font-size: 5.653rem; 
+    }
+    h2{
+        font-size: 3.998rem;
+    }
+   }
 
